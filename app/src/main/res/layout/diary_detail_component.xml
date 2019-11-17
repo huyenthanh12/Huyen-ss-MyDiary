@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_border_background"
+        android:orientation="horizontal"
+        android:weightSum="11"
+        >
+        <LinearLayout
+            android:id="@+id/item_date"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/item_date_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4:20"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="7dp"
+                android:textSize="17dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="10">
+            <TextView
+                android:id="@+id/detail_datecount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Day 1"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Ha Ha Ha, beautiful sunday"
+                android:textSize="18dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

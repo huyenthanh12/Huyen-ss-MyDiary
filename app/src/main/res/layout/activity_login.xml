@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/diary_icon"
+        android:layout_width="122dp"
+        android:layout_height="164dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/diary"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/google_signin_address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/diary_icon">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/user"/>
+        <EditText
+            android:id="@+id/mEdit_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Your email address"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/google_signin_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/google_signin_address"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/key"/>
+        <EditText
+            android:id="@+id/mEdit_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Your password"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+    <LinearLayout
+    android:id="@+id/firebase_signin_btn"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="23dp"
+    android:layout_below="@+id/google_signin_password" android:background="@drawable/button_background"
+
+        >
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/ic_firebase"/>
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Sign in with Firebase account"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        />
+
+</LinearLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnSignInGG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firebase_signin_btn"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="New Account"
+        android:textSize="10dp"
+        android:background="@drawable/button_background"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
